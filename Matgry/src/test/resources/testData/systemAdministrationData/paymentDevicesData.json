@@ -1,0 +1,19 @@
+{
+  "create": {
+    "bankAccountName": "أحمد",
+    "nameAR": "جهاز الدفع واحد",
+    "nameEN": "Payment Device one",
+    "deviceNumber": "123456789",
+    "isActive": true,
+    "notes": "ملاحظات"
+
+  },
+    "update": {
+        "bankAccountName": "Brent joseph",
+        "nameAR": "جهاز الدفع اثنان",
+        "nameEN": "Payment Device two",
+        "deviceNumber": "987654321",
+        "isActive": false,
+        "notes": "ملاحظات جديدة"
+    }
+}
