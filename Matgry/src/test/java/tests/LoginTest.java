@@ -26,7 +26,6 @@ public class LoginTest {
     public void login() throws InterruptedException {
         String username = DataReader.getValue(credentialsJsonFilePath, "username");
         String password = DataReader.getValue(credentialsJsonFilePath, "password");
-        String password = DataReader.getValue(credentialsJsonFilePath, "password");
 
         new LoginPage(driver)
                 .fillUserNameFiled(username)
