@@ -15,7 +15,7 @@ public class PaymentDevicesPage {
         commons = new Commons(driver);
     }
 
-    private final By paymentDevicesTab = By.xpath("//a[@href='/payment-devices']");
+    private final By paymentDevicesTab = By.xpath("//li[@id=\"PaymentDevices\"]");
     private final By bankAccountsList = By.xpath("//select[@id='bank-select-modal']");
     private final By paymentDeviceNumberField = By.xpath("//input[@id='DeviceNo']");
     private final By isActivatedToggle = By.xpath("//input[@id='IsActivated']");
@@ -35,8 +35,9 @@ public class PaymentDevicesPage {
     }
 
     @Step("Select bank account")
-    public PaymentDevicesPage selectBankAccount(String bankAccount) {
-        driver.element().selectByVisibilityOfText(bankAccountsList, bankAccount);
+    public PaymentDevicesPage selectBankAccount(String bankAccountName) {
+        driver.element().isDisplayed(bankAccountsList);
+        driver.element().selectByIndex(bankAccountsList, 1);
         return this;
     }
 
@@ -84,13 +85,34 @@ public class PaymentDevicesPage {
     public PaymentDevicesPage createNewPaymentDevice(String bankAccountName, String paymentDeviceNameAR, String paymentDeviceNameEN, String paymentDeviceNumber, boolean isActivated, String paymentDeviceNotes) {
         clickOnPaymentDevicesTab()
                 .clickOnAddPaymentDeviceButton()
-                .selectBankAccount(bankAccountName)
                 .fillPaymentDeviceNames(paymentDeviceNameAR, paymentDeviceNameEN)
+                .selectBankAccount(bankAccountName)
                 .fillPaymentDeviceNumber(paymentDeviceNumber)
                 .toggleIsActivated(isActivated)
                 .fillPaymentDeviceNotes(paymentDeviceNotes)
                 .clickOnSaveBtn()
                 .checkSuccessMessageAndClickOk();
+        return this;
+    }
+
+    @Step("Update Payment Device")
+    public PaymentDevicesPage updatePaymentDevice(String bankAccountName, String paymentDeviceNameAR, String paymentDeviceNameEN, String paymentDeviceNumber, boolean isActivated, String paymentDeviceNotes) {
+        clickOnPaymentDevicesTab();
+        commons.goToUpdateForm();
+        fillPaymentDeviceNames(paymentDeviceNameAR, paymentDeviceNameEN);
+        selectBankAccount(bankAccountName);
+        fillPaymentDeviceNumber(paymentDeviceNumber);
+        toggleIsActivated(isActivated);
+        fillPaymentDeviceNotes(paymentDeviceNotes);
+        clickOnSaveBtn()
+                .checkSuccessMessageAndClickOk();
+        return this;
+    }
+
+    @Step("Delete Payment Device")
+    public PaymentDevicesPage deletePaymentDevice() {
+        clickOnPaymentDevicesTab();
+        commons.delete();
         return this;
     }
 

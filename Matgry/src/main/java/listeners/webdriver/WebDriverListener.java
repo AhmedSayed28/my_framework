@@ -6,6 +6,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.Arrays;
 import java.util.NoSuchElementException;
 
 public class WebDriverListener implements org.openqa.selenium.support.events.WebDriverListener {
@@ -139,9 +140,9 @@ public class WebDriverListener implements org.openqa.selenium.support.events.Web
 //        StringBuilder stringBuilder = new StringBuilder();
 //        Arrays.stream(keysToSend).toList().forEach(stringBuilder::append);
         try {
-            System.out.println("Type \"" + keysToSend + "\" into " + getElementName(element) + ".");
+            System.out.println("Type \"" + Arrays.toString(keysToSend) + "\" into " + getElementName(element) + ".");
         } catch (Exception throwable) {
-            System.out.println("Type \"" + keysToSend + "\".");
+            System.out.println("Type \"" + Arrays.toString(keysToSend) + "\".");
         }
     }
 

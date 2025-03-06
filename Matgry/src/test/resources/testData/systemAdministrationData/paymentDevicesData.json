@@ -1,10 +1,10 @@
 {
   "create": {
-    "bankAccountName": "أحمد",
+    "bankAccountName": "Brent joseph",
     "nameAR": "جهاز الدفع واحد",
     "nameEN": "Payment Device one",
     "deviceNumber": "123456789",
-    "isActive": true,
+    "isActivated": true,
     "notes": "ملاحظات"
 
   },
@@ -13,7 +13,7 @@
         "nameAR": "جهاز الدفع اثنان",
         "nameEN": "Payment Device two",
         "deviceNumber": "987654321",
-        "isActive": false,
+        "isActivated": false,
         "notes": "ملاحظات جديدة"
     }
 }
