@@ -1,0 +1,12 @@
+{
+  "create": {
+    "nameAR": "وحدة",
+    "nameEN": "Unit",
+    "isActivated": true
+  },
+  "update": {
+    "nameAR": "وحدة جديدة",
+    "nameEN": "New Unit",
+    "isActivated": false
+  }
+}
