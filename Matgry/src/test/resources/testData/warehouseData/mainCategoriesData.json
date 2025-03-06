@@ -1,0 +1,10 @@
+{
+  "create": {
+    "nameAR": "مستلزمات الأطفال",
+    "nameEN": "Baby Supplies"
+  },
+    "update": {
+        "nameAR": "مستلزمات الشباب",
+        "nameEN": "Youth Supplies"
+    }
+}

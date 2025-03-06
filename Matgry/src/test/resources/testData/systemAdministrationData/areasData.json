@@ -1,0 +1,12 @@
+{
+  "create": {
+    "country": "المملكة العربية السعودية",
+    "nameAR": "الرياض",
+    "nameEN": "Riyadh"
+  },
+  "update": {
+    "country": "عمان",
+    "nameAR": "مسقط",
+    "nameEN": "Muscat"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "create": {
+    "nameAR": "بنك مصر",
+    "nameEN": "Misr de Banque"
+  },
+  "update": {
+    "nameAR": "بنك كيو ان بي",
+    "nameEN": "QNB Bank"
+  }
+}

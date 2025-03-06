@@ -1,0 +1,16 @@
+{
+  "create": {
+    "bankName": "بنك مصر",
+    "nameAR": "حساب بنك مصر",
+    "nameEN": "Bank Misr Account",
+    "IBAN": "SA0380000000608010167519",
+    "notes": "This is a test bank account"
+  },
+    "update": {
+        "BankName": "بنك القاهرة",
+        "nameAR": "حساب بنك القاهرة",
+        "nameEN": "Bank Cairo Account",
+        "IBAN": "SA0380000000608010167518",
+        "notes": "This is an updated test bank account"
+    }
+}

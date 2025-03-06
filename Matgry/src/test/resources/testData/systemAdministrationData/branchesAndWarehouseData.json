@@ -1,0 +1,28 @@
+{
+  "create": {
+    "nameAR": "عروبة",
+    "nameEN": "Oroba",
+    "addressAR": "شارع التحرير القاهرة",
+    "addressEN": "Tahrir Street Cairo",
+    "commercialRegistrationNo": "123456789",
+    "phone": "512345678",
+    "mobile1": "522345678",
+    "mobile2": "532345678",
+    "responsibleUser": "Ahmed Ghali",
+    "isActivated": true,
+    "isSubBranch": false
+  },
+  "update": {
+    "nameAR": "الفردوس",
+    "nameEN": "AlFirdous",
+    "addressAR": "شارع النصر الجيزة",
+    "addressEN": "Nasr Street Giza",
+    "commercialRegistrationNo": "987654321",
+    "phone": "542345678",
+    "mobile1": "552345678",
+    "mobile2": "562345678",
+    "responsibleUser": "Mohamed Ali",
+    "isActivated": false,
+    "isSubBranch": true
+  }
+}
